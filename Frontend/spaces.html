@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Popln</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=no" />
+<link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+<link href="css/jcarousel.responsive.css" rel="stylesheet" type="text/css" />
+<link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
+<link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css" />
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/daterangepicker.css" rel="stylesheet" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<script src="js/html5.js"></script>
+<link href="css/media.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<header class="head home-head">
+    <div class="header_top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="img/logo.png" alt="logo" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <div class="anywhere-main clearfix">
+                                <ul class="clearfix">
+                                    <li class="anywhere">
+                                        <input class="icon1" type="text" placeholder="Anywhere" />
+                                    </li>
+                                    <li class="anytime">
+                                        <input class="icon1 icon2" type="text" id="demo-range" placeholder="Anytime" />
+                                    </li>
+                                    <li class="guest">
+                                        <button id="guest_button">
+                                            <span><img src="img/head-guest-icon.png" alt="" /></span>
+                                            <span>1 guest</span>
+                                        </button>
+                                        <div id="guest_open" class="bz_guest_box clearfix" style="display: none;">
+                                            <div class="feild">
+                                                <label>Adults</label>
+                                                <span><input value="" class="qtyminus" field="adult" type="button"> <input name="adult" value="0" class="qty" type="text"> <input value="" class="qtyplus" field="adult" type="button"></span>
+                                            </div>
+                                            <div class="feild">
+                                                <label>Children<br/> <span class="age">Ages 2 - 12</span></label>
+                                                <span><input value="" class="qtyminus" field="children" type="button"> <input name="children" value="0" class="qty" type="text"> <input value="" class="qtyplus" field="children" type="button"></span>
+                                            </div>
+                                            <div class="feild">
+                                                <label>Infants<br/> <span class="age">Under 2</span></label>
+                                                <span><input value="" class="qtyminus" field="infant" type="button"> <input name="infant" value="0" class="qty" type="text"> <input value="" class="qtyplus" field="infant" type="button"></span>
+                                            </div>
+                                            <div class="pull-left"><a href="#">Cancel</a></div>
+                                            <div class="pull-right"><a href="#">Apply</a></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="pro_img">
+                        <img src="img/profile-pic.png" alt="" />
+                    </div>
+                    <ul class="nav navbar-nav navbar-right navi">
+                        <li><a href="#">Become a Partner</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rentals <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Messages</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="head-tab">
+            <div class="container-fluid">
+                <div class="col-xs-12">
+                    <ul>
+                        <li><a href="index.html">Industry</a></li>
+                        <li><a class="active" href="spaces.html">Spaces</a></li>
+                        <li><a href="workshops.html">Workshops</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="spaces-home">
+    <div class="container-fluid">
+        <div class="col-md-8 spaces-left">
+            <ul>
+                <li class="space-type">
+                    <a herf="#" id="space-type">Space Type <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <div id="space-type_open" class="bz_guest_box clearfix" style="display: none;">
+                        <ul>
+                            <li>
+                                <div class="feild">
+                                    <label for="user_preference">
+                                        <input id="user_preference" type="checkbox"> Entire home <br>
+                                        <p>Have a place to yourself</p>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feild">
+                                    <label for="user_preference">
+                                        <input id="user_preference" type="checkbox"> Entire home <br>
+                                        <p>Have a place to yourself</p>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feild">
+                                    <label for="user_preference">
+                                        <input id="user_preference" type="checkbox"> Entire home <br>
+                                        <p>Have a place to yourself</p>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="pull-left"><a href="#">Cancel</a></div>
+                        <div class="pull-right"><a href="#">Apply</a></div>
+                    </div>
+                </li>
+                <li class="space-type price-range">
+                    <a herf="#" id="price-range">Price Range <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <div id="price-range_open" class="bz_guest_box clearfix" style="display: none;">
+                        <ul>
+                            <li>
+                                <div class="feild">
+                                    <p>Price [<span id="amount"></span>]</p>
+                                    <p>The average nightly price is $5,409.</p>
+                                    <div id="slider-range"></div>
+                                    <form method="post" action="get_items.php">
+                                      <input type="hidden" id="amount1" />
+                                      <input type="hidden" id="amount2" />
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="pull-left"><a href="#">Cancel</a></div>
+                        <div class="pull-right"><a href="#">Apply</a></div>
+                    </div>
+                </li>
+                <li class="space-type rent-instantly">
+                    <a herf="#" id="rent-instantly">Rent Instantly <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <div id="rent-instantly_open" class="bz_guest_box clearfix" style="display: none;">
+                        <ul>
+                            <li>
+                                <div class="feild clearfix">
+                                    <div class="pull-left">
+                                        <h4>Rent Instantly</h4>
+                                        <p>Listings you can book without waiting for host approval</p>
+                                    </div>
+                                    <div class="pull-right">
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <div class="slider round"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                            </li>
+                        </ul>
+                        <div class="pull-left"><a href="#">Cancel</a></div>
+                        <div class="pull-right"><a href="#">Apply</a></div>
+                    </div>
+                </li>
+                <li class=""><a herf="#">More <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+            </ul>
+            <div class="row">
+                <div class="col-md-6 owl-carousel">
+                    <div class="item">
+                        <div class="slide-main clearfix">
+                            <div class="slide-contant">
+                                <div class="img" style="background-image: url(img/image1.jpg);">
+                                </div>
+                                <div class="content">
+                                    <p><strong>#4,452<span></span> I SETTE CONI - TRULLO EDERA </strong></p>
+                                    <p><span>Entire home/apt ·</span> 2 beds</p>
+                                    <div class="review">
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span>1 review</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="slide-main clearfix">
+                            <div class="slide-contant">
+                                <div class="img" style="background-image: url(img/image1.jpg);">
+                                </div>
+                                <div class="content">
+                                    <p><strong>#4,452<span></span> I SETTE CONI - TRULLO EDERA </strong></p>
+                                    <p><span>Entire home/apt ·</span> 2 beds</p>
+                                    <div class="review">
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span>1 review</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 owl-carousel">
+                    <div class="item">
+                        <div class="slide-main clearfix">
+                            <div class="slide-contant">
+                                <div class="img" style="background-image: url(img/image1.jpg);">
+                                </div>
+                                <div class="content">
+                                    <p><strong>#4,452<span></span> I SETTE CONI - TRULLO EDERA </strong></p>
+                                    <p><span>Entire home/apt ·</span> 2 beds</p>
+                                    <div class="review">
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span>1 review</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="slide-main clearfix">
+                            <div class="slide-contant">
+                                <div class="img" style="background-image: url(img/image1.jpg);">
+                                </div>
+                                <div class="content">
+                                    <p><strong>#4,452<span></span> I SETTE CONI - TRULLO EDERA </strong></p>
+                                    <p><span>Entire home/apt ·</span> 2 beds</p>
+                                    <div class="review">
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span>1 review</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 owl-carousel">
+                    <div class="item">
+                        <div class="slide-main clearfix">
+                            <div class="slide-contant">
+                                <div class="img" style="background-image: url(img/image1.jpg);">
+                                </div>
+                                <div class="content">
+                                    <p><strong>#4,452<span></span> I SETTE CONI - TRULLO EDERA </strong></p>
+                                    <p><span>Entire home/apt ·</span> 2 beds</p>
+                                    <div class="review">
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span>1 review</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="slide-main clearfix">
+                            <div class="slide-contant">
+                                <div class="img" style="background-image: url(img/image1.jpg);">
+                                </div>
+                                <div class="content">
+                                    <p><strong>#4,452<span></span> I SETTE CONI - TRULLO EDERA </strong></p>
+                                    <p><span>Entire home/apt ·</span> 2 beds</p>
+                                    <div class="review">
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span>1 review</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 owl-carousel">
+                    <div class="item">
+                        <div class="slide-main clearfix">
+                            <div class="slide-contant">
+                                <div class="img" style="background-image: url(img/image1.jpg);">
+                                </div>
+                                <div class="content">
+                                    <p><strong>#4,452<span></span> I SETTE CONI - TRULLO EDERA </strong></p>
+                                    <p><span>Entire home/apt ·</span> 2 beds</p>
+                                    <div class="review">
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span>1 review</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="slide-main clearfix">
+                            <div class="slide-contant">
+                                <div class="img" style="background-image: url(img/image1.jpg);">
+                                </div>
+                                <div class="content">
+                                    <p><strong>#4,452<span></span> I SETTE CONI - TRULLO EDERA </strong></p>
+                                    <p><span>Entire home/apt ·</span> 2 beds</p>
+                                    <div class="review">
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span>1 review</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 owl-carousel">
+                    <div class="item">
+                        <div class="slide-main clearfix">
+                            <div class="slide-contant">
+                                <div class="img" style="background-image: url(img/image1.jpg);">
+                                </div>
+                                <div class="content">
+                                    <p><strong>#4,452<span></span> I SETTE CONI - TRULLO EDERA </strong></p>
+                                    <p><span>Entire home/apt ·</span> 2 beds</p>
+                                    <div class="review">
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span>1 review</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="slide-main clearfix">
+                            <div class="slide-contant">
+                                <div class="img" style="background-image: url(img/image1.jpg);">
+                                </div>
+                                <div class="content">
+                                    <p><strong>#4,452<span></span> I SETTE CONI - TRULLO EDERA </strong></p>
+                                    <p><span>Entire home/apt ·</span> 2 beds</p>
+                                    <div class="review">
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span>1 review</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 owl-carousel">
+                    <div class="item">
+                        <div class="slide-main clearfix">
+                            <div class="slide-contant">
+                                <div class="img" style="background-image: url(img/image1.jpg);">
+                                </div>
+                                <div class="content">
+                                    <p><strong>#4,452<span></span> I SETTE CONI - TRULLO EDERA </strong></p>
+                                    <p><span>Entire home/apt ·</span> 2 beds</p>
+                                    <div class="review">
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span>1 review</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="slide-main clearfix">
+                            <div class="slide-contant">
+                                <div class="img" style="background-image: url(img/image1.jpg);">
+                                </div>
+                                <div class="content">
+                                    <p><strong>#4,452<span></span> I SETTE CONI - TRULLO EDERA </strong></p>
+                                    <p><span>Entire home/apt ·</span> 2 beds</p>
+                                    <div class="review">
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span><img src="img/reting-star-home.png" alt="" /></span>
+                                        <span>1 review</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 spaces-map">
+            <div class="row">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d45980098.7345709!2d99.03158682795288!3d45.30029418059744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1496324952690" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+    
+</section>
+<footer class="foot">
+    <div class="container">
+        <div class="row">
+            <div class="foot_top clearfix">
+                <div class="col-lg-3 one-foruth">
+                    <select><option value="id">Bahasa Indonesia</option><option value="ms">Bahasa Melayu</option><option value="ca">Català</option><option value="da">Dansk</option><option value="de">Deutsch</option><option value="en">English</option><option value="es">Español</option><option value="el">Eλληνικά</option><option value="fr">Français</option><option value="it">Italiano</option><option value="hu">Magyar</option><option value="nl">Nederlands</option><option value="no">Norsk</option><option value="pl">Polski</option><option value="pt">Português</option><option value="fi">Suomi</option><option value="sv">Svenska</option><option value="tr">Türkçe</option><option value="is">Íslenska</option><option value="cs">Čeština</option><option value="ru">Русский</option><option value="th">ภาษาไทย</option><option value="zh">中文 (简体)</option><option value="zh-TW">中文 (繁體)</option><option value="ja">日本語</option><option value="ko">한국어</option></select>
+                    
+                    <select><option value="AED">AED</option><option value="ARS">ARS</option><option value="AUD">AUD</option><option value="BGN">BGN</option><option value="BRL">BRL</option><option value="CAD">CAD</option><option value="CHF">CHF</option><option value="CLP">CLP</option><option value="CNY">CNY</option><option value="COP">COP</option><option value="CRC">CRC</option><option value="CZK">CZK</option><option value="DKK">DKK</option><option value="EUR">EUR</option><option value="GBP">GBP</option><option value="HKD">HKD</option><option value="HRK">HRK</option><option value="HUF">HUF</option><option value="IDR">IDR</option><option value="ILS">ILS</option><option value="INR">INR</option><option value="JPY">JPY</option><option value="KRW">KRW</option><option value="MAD">MAD</option><option value="MXN">MXN</option><option value="MYR">MYR</option><option value="NOK">NOK</option><option value="NZD">NZD</option><option value="PEN">PEN</option><option value="PHP">PHP</option><option value="PLN">PLN</option><option value="RON">RON</option><option value="RUB">RUB</option><option value="SAR">SAR</option><option value="SEK">SEK</option><option value="SGD">SGD</option><option value="THB">THB</option><option value="TRY">TRY</option><option value="TWD">TWD</option><option value="UAH">UAH</option><option value="USD">USD</option><option value="UYU">UYU</option><option value="VND">VND</option><option value="ZAR">ZAR</option></select>
+                </div>
+                <div class="col-lg-3 one-foruth pd-left">
+                    <h5>Popln</h5>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Policies</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Diversity &amp; Belonging</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 one-foruth pd-left">
+                    <h5>Discover</h5>
+                    <ul>
+                        <li><a href="#">Trust &amp; Safety</a></li>
+                        <li><a href="#">Travel Credit</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Popln Citizen</a></li>
+                        <li><a href="#">Business Travel</a></li>
+                        <li><a href="#">Guidebooks</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 one-foruth pd-left">
+                    <h5>Hosting</h5>
+                    <ul>
+                        <li><a href="#">Why Host</a></li>
+                        <li><a href="#">Hospitality</a></li>
+                        <li><a href="#">Responsible Hosting</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foot_bottom clearfix">
+                <div class="copy-right">
+                    <p>&copy Popln, Inc.</p>
+                </div>
+                <div class="terms">
+                    <ul>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Site Map</a></li>
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/jQuery.js" type="text/javascript"></script>
+<script src="js/jquery-ui.js" type="text/javascript"></script>
+<script src="js/jquery.jcarousel.min.js" type="text/javascript"></script>
+<script src="js/jcarousel.responsive.js" type="text/javascript"></script>
+<script src="js/owl.carousel.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/moment.min.js" type="text/javascript"></script>
+<script src="js/daterangepicker.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('input.icon1').focus(function() {
+        $(this).attr('placeholder', 'Destination, city, address')    
+    }).blur(function() {
+        $(this).attr('placeholder', 'Anywhere')
+    })
+    
+    $('#demo-range').daterangepicker();
+    $('#demo-range').val('Anytime');
+    
+    $('#guest_button').on("click", function(e) {
+        $('#guest_open').slideToggle();
+        e.stopPropagation(); 
+    });
+    $(document).on("click", function(e) {	
+        if(!(e.target.closest('#guest_open'))){	
+            $("#guest_open").slideUp();   		
+        }
+    });
+    
+    $('#space-type').on("click", function(e) {
+        $('#space-type_open').slideToggle();
+        e.stopPropagation(); 
+    });
+    $(document).on("click", function(e) {	
+        if(!(e.target.closest('#space-type_open'))){	
+            $("#space-type_open").slideUp();   		
+        }
+    });
+    
+    $('#price-range').on("click", function(e) {
+        $('#price-range_open').slideToggle();
+        e.stopPropagation(); 
+    });
+    $(document).on("click", function(e) {	
+        if(!(e.target.closest('#price-range_open'))){	
+            $("#price-range_open").slideUp();   		
+        }
+    });
+    
+    $('#rent-instantly').on("click", function(e) {
+        $('#rent-instantly_open').slideToggle();
+        e.stopPropagation(); 
+    });
+    $(document).on("click", function(e) {	
+        if(!(e.target.closest('#rent-instantly_open'))){	
+            $("#rent-instantly_open").slideUp();   		
+        }
+    });
+    
+   
+    
+    // This button will increment the value
+    $('.qtyplus').click(function(e){
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        fieldName = $(this).attr('field');
+        // Get its current value
+        var currentVal = parseInt($('input[name='+fieldName+']').val());
+        // If is not undefined
+        if (!isNaN(currentVal)) {
+            // Increment
+            $('input[name='+fieldName+']').val(currentVal + 1);
+        } else {
+            // Otherwise put a 0 there
+            $('input[name='+fieldName+']').val(0);
+        }
+    });
+    // This button will decrement the value till 0
+    $(".qtyminus").click(function(e) {
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        fieldName = $(this).attr('field');
+        // Get its current value
+        var currentVal = parseInt($('input[name='+fieldName+']').val());
+        // If it isn't undefined or its greater than 0
+        if (!isNaN(currentVal) && currentVal > 0) {
+            // Decrement one
+            $('input[name='+fieldName+']').val(currentVal - 1);
+        } else {
+            // Otherwise put a 0 there
+            $('input[name='+fieldName+']').val(0);
+        }
+    });
+    
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    })
+    
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 5000,
+      values: [ 0, 5000 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).html( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+		$( "#amount1" ).val(ui.values[ 0 ]);
+		$( "#amount2" ).val(ui.values[ 1 ]);
+      }
+    });
+    
+	$( "#amount" ).html( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+     " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+});
+
+
+
+</script>
+</body>
+</html>
